@@ -1,0 +1,15 @@
+<%@page import="com.acit4045.human.commons.User"%>
+
+<%
+    User userObj = null;
+    try{
+        userObj = (User) pageContext.getSession().getAttribute("UserLogin");
+        if(userObj==null){
+            response.sendRedirect("index.jsp");
+            return;
+        }
+    }catch(Exception e){
+        response.sendRedirect("index.jsp");
+        return;
+    }
+%>

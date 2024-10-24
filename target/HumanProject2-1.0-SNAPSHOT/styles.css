@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+}
+
+.notes-container, .notes-container * {
+    text-align: left !important; /* Ensures that everything inside notes is aligned left */
+}
+
+
+h2 {
+    color: #5d2d91;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5d2d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6b3baa;
+}
+
+.section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Bottom Navigation */
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #5d2d91;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.bottom-nav button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.bottom-nav button:hover {
+    opacity: 0.8;
+    background-color: #6b3baa;
+}
+
+.bottom-nav button.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    background-color: #a163f1;
+}

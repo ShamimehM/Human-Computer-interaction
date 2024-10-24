@@ -1,0 +1,25 @@
+<%@page import="java.sql.Connection" %>
+<%@page import="java.sql.DriverManager" %>
+<%@page import="java.sql.PreparedStatement" %>
+<%@page import="java.sql.ResultSet" %>
+<%@page import="java.sql.SQLException" %>
+<%@page import="java.sql.Statement" %>
+<%@page import="java.sql.PreparedStatement" %>
+<%
+    String server = "humandb.database.windows.net";
+    String port = "1433";
+    String user = "humandb_admin";
+    String pwd = "Hum@n@123";
+    String dbName = "human_project_db";
+
+    String connStr = "jdbc:sqlserver://"+server+":"+port+";databaseName="+dbName+";user="+user+";password="+pwd+"";
+
+    Connection con = null;
+
+    try{
+        con = DriverManager.getConnection(connStr);
+        con.setAutoCommit(false);
+    }catch (SQLException e) {
+        e.printStackTrace();
+    }
+%>

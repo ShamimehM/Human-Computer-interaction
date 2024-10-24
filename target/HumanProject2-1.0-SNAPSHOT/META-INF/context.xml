@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/HumanProject2">
+        <Resource name="jdbc/humanproject_db" 
+          auth="Container"
+          type="javax.sql.DataSource"
+          initialSize="5"
+          username="humandb_admin"
+          password="Hum@n@123"
+          driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://humandb.database.windows.net:1433;databaseName=human_project_db" />
+</Context>

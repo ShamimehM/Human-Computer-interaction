@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+
+/* Notes Section Specific Styles */
+.notes-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding-left: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     /*text-align: left; Override the global text alignment */
+}
+
+#notesList {
+    list-style-type: none; /* Remove bullet points if needed */
+    padding-left: 20%; /* Adjust this value to position the list one-third from the right */
+    margin: 0;
+}
+
+#notesList li {
+    margin-bottom: 10px; /* Spacing between list items */
+     /*text-align: left; Ensure each note entry is left-aligned */
+}
+
+.note-entry h4 {
+    margin: 0 0 14px;
+    color: #5d2d91;
+}
+
+.note-entry p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
